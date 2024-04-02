@@ -18,7 +18,7 @@ from openai import OpenAI
 #client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 #CABEÇALHO DO FORM
-st.markdown("<h1 style='text-align: center;'>Assistente de Scouting - Fase 2</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Assistente de Scouting<br>Fase 2</h1>", unsafe_allow_html=True)
 st.markdown("<h6 style='text-align: center;'>app by @JAmerico1898</h6>", unsafe_allow_html=True)
 st.markdown("---")
 
