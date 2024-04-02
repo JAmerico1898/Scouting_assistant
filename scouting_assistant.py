@@ -4447,7 +4447,7 @@ if jogadores:
 
             #Collecting Additional Information
             # Load the saved DataFrame from "Zagueiro_ranking.csv"apoio
-            extremo_ranking_df = pd.read_csv("extremo_ranking.csv")
+            extremo_ranking_df = pd.read_csv("Extremo_ranking.csv")
             # Building the Extended Title"
             rows_count = extremo_ranking_df[extremo_ranking_df['Liga'] == liga].shape[0]
             participacao_ranking_value = extremo_ranking_df.loc[(extremo_ranking_df['Atleta'] == jogadores) & 
@@ -7344,7 +7344,7 @@ if jogadores:
 
                     #Collecting Additional Information
                     # Load the saved DataFrame from "Lateral_ranking.csv"apoio
-                    bola_aérea_ranking_df = pd.read_csv("bola_aérea_ranking.csv")
+                    bola_aérea_ranking_df = pd.read_csv("Bola_aérea_ranking.csv")
 
                     # Building the Extended Title"
                     rows_count = bola_aérea_ranking_df[(bola_aérea_ranking_df['Liga'] == liga)  & 
@@ -8064,7 +8064,7 @@ if jogadores:
 
                     #Collecting Additional Information
                     # Load the saved DataFrame from "Lateral_ranking.csv"
-                    oportunismo_ranking_df = pd.read_csv("oportunismo_ranking.csv")
+                    oportunismo_ranking_df = pd.read_csv("Oportunismo_ranking.csv")
                     # Building the Extended Title"
                     rows_count = oportunismo_ranking_df[(oportunismo_ranking_df['Liga'] == liga)  & 
                                                                         (oportunismo_ranking_df['Posição'] == posição)].shape[0]
