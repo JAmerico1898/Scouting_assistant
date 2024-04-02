@@ -1,0 +1,33 @@
+,Posições ,atributos (atributos.csv),Métricas
+0,Lateral (Lateral.csv),Participação (participação.csv),"Duelos defensivos /90, Passes /90,Passes recebidos /90, Duelos ganhos /90"
+1,Lateral (Lateral.csv),Defesa (defesa.csv),"Duelos defensivos /90, Duelos ganhos /90, Interceptações /90,Carrinhos /90, Ações defensivas bem sucedidas /90, Duelos defensivos ganhos /90"
+2,Lateral (Lateral.csv),Apoio (apoio.csv),"Passes longos recebidos /90, Acelerações /90, Corridas progressivas /90, Passes entre linhas certos /90, Passes progressivos certos /90, Passes frontais certos /90"
+3,Lateral (Lateral.csv),Ataque (ataque.csv),"Passes terço final certos /90, Cruzamentos certos p/90, Passes área do pênalti certos /90, Passes inteligentes certos /90, Deep completed crosses /90"
+4,Lateral (Lateral.csv),Último passe (último_passe.csv),"Assistências /90, xA /90, Deep completions /90, Passes chave /90"
+5,Lateral (Lateral.csv),Drible (drible.csv),Dribles bem sucedidos /90
+6,Zagueiro (Zagueiro.csv),Participação (participação.csv),"Duelos defensivos /90, Passes /90,Passes recebidos /90, Duelos ganhos /90"
+7,Zagueiro (Zagueiro.csv),Defesa (defesa.csv),"Duelos defensivos /90, Duelos ganhos /90, Interceptações /90,Carrinhos /90, Ações defensivas bem sucedidas /90, Duelos defensivos ganhos /90"
+8,Zagueiro (Zagueiro.csv),Construção (construção.csv),"Passes entre linhas certos /90, Passes progressivos certos /90, Passes frontais certos /90, Passes terço final certos /90"
+9,Meio-Campo (Meio_Campo.csv),Participação (participação.csv),"Duelos defensivos /90, Passes /90,Passes recebidos /90, Duelos ganhos /90"
+10,Meio-Campo (Meio_Campo.csv),Defesa (defesa.csv),"Duelos defensivos /90, Duelos ganhos /90, Interceptações /90,Carrinhos /90, Ações defensivas bem sucedidas /90, Duelos defensivos ganhos /90"
+11,Meio-Campo (Meio_Campo.csv),Construção (construção.csv),"Passes entre linhas certos /90, Passes progressivos certos /90, Passes frontais certos /90, Passes terço final certos /90"
+12,Meio-Campo (Meio_Campo.csv),Ataque (ataque.csv),"Passes terço final certos /90, Cruzamentos certos p/90, Passes área do pênalti certos /90, Passes inteligentes certos /90, Deep completed crosses /90"
+13,Meio-Campo (Meio_Campo.csv),Último passe (último_passe.csv),"Assistências /90, xA /90, Deep completions /90, Passes chave /90"
+14,Meio-Campo (Meio_Campo.csv),Ameaça ofensiva (ameaça_ofensiva.csv),"Pisadas na área /90, Gols /90, xG /90"
+15,Meio-Campo (Meio_Campo.csv),Drible (drible.csv),Dribles bem sucedidos /90
+16,Extremo (Extremo.csv),Participação (participação.csv),"Duelos defensivos /90, Passes /90,Passes recebidos /90, Duelos ganhos /90"
+17,Extremo (Extremo.csv),Recomposição (recomposição.csv),"Duelos defensivos /90, Interceptações /90, Ações defensivas bem sucedidas /90, Duelos defensivos ganhos /90"
+18,Extremo (Extremo.csv),Arranque (arranque.csv),"Passes longos recebidos /90, Acelerações /90, Corridas progressivas /90"
+19,Extremo (Extremo.csv),Ataque (ataque.csv),"Passes terço final certos /90, Cruzamentos certos p/90, Passes área do pênalti certos /90, Passes inteligentes certos /90, Deep completed crosses /90"
+20,Extremo (Extremo.csv),Último passe (último_passe.csv),"Assistências /90, xA /90, Deep completions /90, Passes chave /90"
+21,Extremo (Extremo.csv),Finalização (finalização.csv),"Conversão de gols, Conversão de xG, Ameaça_Ofensiva, Finalizações no alvo /90"
+22,Extremo (Extremo.csv),Drible (drible.csv),Dribles bem sucedidos /90
+23,Atacante (Atacante.csv),Participação (participação.csv),"Duelos defensivos /90, Passes /90,Passes recebidos /90, Duelos ganhos /90"
+24,Atacante (Atacante.csv),Recomposição (recomposição.csv),"Duelos defensivos /90, Interceptações /90, Ações defensivas bem sucedidas /90, Duelos defensivos ganhos /90"
+25,Atacante (Atacante.csv),Retenção de posse (retenção_posse),"Passes recebidos /90, Duelos ganhos /90, Passes longos recebidos /90, Passes curtos/médios certos p/90, Duelos aéreos ganhos %"
+26,Atacante (Atacante.csv),Arranque (arranque.csv),"Passes longos recebidos /90, Acelerações /90, Corridas progressivas /90"
+27,Atacante (Atacante.csv),Bola aérea (bola_aérea),"Duelos aéreos ganhos %, Duelos aéreos ganhos /90, Gols de cabeça %, Duelos aéreos ganhos %_percentil"
+28,Atacante (Atacante.csv),Último passe (último_passe.csv),"Assistências /90, xA /90, Deep completions /90, Passes chave /90"
+29,Atacante (Atacante.csv),Finalização (finalização.csv),"Conversão de gols, Conversão de xG, Ameaça_Ofensiva, Finalizações no alvo /90"
+30,Atacante (Atacante.csv),Drible (drible.csv),Dribles bem sucedidos /90
+31,Atacante (Atacante.csv),Oportunismo (oportunismo.csv),"xG /90, xG por finalização /90, Gols por pisadas na área /90, xG por pisadas na área /90"

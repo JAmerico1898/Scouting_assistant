@@ -1,0 +1,10 @@
+,LATERAL,DEFESA,MEIO-CAMPO,EXTREMO,ATACANTE
+0,Participação,Participação,Participação,Participação,Participação
+1,Defesa,Defesa,Defesa,Recomposição,Recomposição
+2,Apoio,Construção,Construção,Arranque,Retenção de posse
+3,Ataque,,Ataque,Ataque,Arranque
+4,Último passe,,Último passe,Último passe,Bola aérea
+5,Drible,,Ameaça ofensiva,Finalização,Último passe
+6,,,Drible,Drible,Finalização
+7,,,,,Drible
+8,,,,,Oportunismo
