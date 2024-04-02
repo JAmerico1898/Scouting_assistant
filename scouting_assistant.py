@@ -31,7 +31,7 @@ atributos_meio_campo = pd.read_csv("atributos_meio_campo.csv")
 atributos_extremo = pd.read_csv("atributos_extremo.csv")
 atributos_atacante = pd.read_csv("atributos_atacante.csv")
 
-jogadores = st.selectbox("Escolha o Jogador", options=prospectos)
+jogadores = st.selectbox("Escolha o Jogador", options=prospectos, index = None)
 if jogadores:
     #Determinar Liga
     df14 = df13.loc[(df13['Atleta']==jogadores)]
