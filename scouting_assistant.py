@@ -306,7 +306,7 @@ if jogadores:
               
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
                     st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
-                    Participação_Lateral_Charts = pd.read_csv('Participação.csv')
+                    Participação_Lateral_Charts = pd.read_csv('participação.csv')
                     Participação_Lateral_Charts_1 = Participação_Lateral_Charts[(Participação_Lateral_Charts['Atleta']==jogadores)&
                                                                                 (Participação_Lateral_Charts['Liga']==liga)&
                                                                                 (Participação_Lateral_Charts['Posição']==posição)]
