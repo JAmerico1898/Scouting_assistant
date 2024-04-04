@@ -2712,7 +2712,7 @@ if jogadores:
                                                                  (meio_campo_ranking_df['Liga'] == liga), 'Ameaça Ofensiva_Ranking'].values
             ameaça_ofensiva_ranking_value = ameaça_ofensiva_ranking_value[0].astype(int)
             output_str = f"({ameaça_ofensiva_ranking_value}/{rows_count})"
-            full_title_ameaça_ofensiva = f"Ameaça_ofensiva {output_str} {highlight_ameaça_ofensiva_value}"
+            full_title_ameaça_ofensiva = f"Ameaça ofensiva {output_str} {highlight_ameaça_ofensiva_value}"
             # Building the Extended Title"
             drible_ranking_value = meio_campo_ranking_df.loc[(meio_campo_ranking_df['Atleta'] == jogadores) & 
                                                                  (meio_campo_ranking_df['Liga'] == liga), 'Drible_Ranking'].values
