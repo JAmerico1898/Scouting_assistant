@@ -1337,7 +1337,7 @@ if jogadores:
                     # Renaming the columns in the DataFrame
                     Último_passe_Lateral_Charts_1.rename(columns=columns_to_rename, inplace=True)
                     #Collecting data to plot
-                    metrics = Último_passe_Lateral_Charts_1.iloc[:, np.r_[9:14]].reset_index(drop=True)
+                    metrics = Último_passe_Lateral_Charts_1.iloc[:, np.r_[8:12]].reset_index(drop=True)
                     metrics_list = metrics.iloc[0].tolist()
                     #Collecting clube
                     clube = Último_passe_Lateral_Charts_1.iat[0, 1]
@@ -1346,7 +1346,7 @@ if jogadores:
                     params = metrics.columns.tolist()
 
                     ## range values
-                    ranges = [(0, 100), (0, 100), (0, 100), (0, 100), (0, 100)]
+                    ranges = [(0, 100), (0, 100), (0, 100), (0, 100)]
 
                     ## parameter value
                     values = metrics_list
@@ -7434,7 +7434,7 @@ if jogadores:
                     # Renaming the columns in the DataFrame
                     Último_passe_Atacante_Charts_1.rename(columns=columns_to_rename, inplace=True)
                     #Collecting data to plot
-                    metrics = Último_passe_Atacante_Charts_1.iloc[:, np.r_[9:14]].reset_index(drop=True)
+                    metrics = Último_passe_Atacante_Charts_1.iloc[:, np.r_[8:12]].reset_index(drop=True)
                     metrics_list = metrics.iloc[0].tolist()
                     #Collecting clube
                     clube = Último_passe_Atacante_Charts_1.iat[0, 1]
@@ -7443,7 +7443,7 @@ if jogadores:
                     params = metrics.columns.tolist()
 
                     ## range values
-                    ranges = [(0, 100), (0, 100), (0, 100), (0, 100), (0, 100)]
+                    ranges = [(0, 100), (0, 100), (0, 100), (0, 100)]
 
                     ## parameter value
                     values = metrics_list
