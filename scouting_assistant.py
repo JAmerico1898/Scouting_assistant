@@ -10665,3 +10665,8 @@ if choose == "Compare Jogadores":
                     compare=True
                 )
                 st.pyplot(fig)
+
+#################################################################################################################
+        else:
+            
+            st.markdown("<h3 style='text-align: center; color: red; '><br><br>A comparação não é possível, pois os jogadores são de posições diferentes.</h3>", unsafe_allow_html=True)
