@@ -330,7 +330,7 @@ if choose == "Análise Individual":
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
                         st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
-                        Participação_Lateral_Charts = pd.read_csv('Participação.csv')
+                        Participação_Lateral_Charts = pd.read_csv('participação.csv')
                         Participação_Lateral_Charts_1 = Participação_Lateral_Charts[(Participação_Lateral_Charts['Atleta']==jogadores)&
                                                                                     (Participação_Lateral_Charts['Liga']==liga)&
                                                                                     (Participação_Lateral_Charts['Posição']==posição)]
@@ -8295,7 +8295,7 @@ if choose == "Compare Jogadores":
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
                 st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
-                Participação_Lateral_Charts = pd.read_csv('Participação.csv')
+                Participação_Lateral_Charts = pd.read_csv('participação.csv')
                 Participação_Lateral_Charts_1 = Participação_Lateral_Charts[((Participação_Lateral_Charts['Atleta']==jogador_1)&
                                                                                     (Participação_Lateral_Charts['Equipe Janela Análise']==equipe_1)&
                                                                                     (Participação_Lateral_Charts['Posição']==posição_1))|
@@ -8727,7 +8727,7 @@ if choose == "Compare Jogadores":
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
                 st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
-                Participação_Zagueiro_Charts = pd.read_csv('Participação.csv')
+                Participação_Zagueiro_Charts = pd.read_csv('participação.csv')
                 Participação_Zagueiro_Charts_1 = Participação_Zagueiro_Charts[((Participação_Zagueiro_Charts['Atleta']==jogador_1)&
                                                                                     (Participação_Zagueiro_Charts['Equipe Janela Análise']==equipe_1)&
                                                                                     (Participação_Zagueiro_Charts['Posição']==posição_1))|
@@ -9015,7 +9015,7 @@ if choose == "Compare Jogadores":
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
                 st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
-                Participação_Meio_Campo_Charts = pd.read_csv('Participação.csv')
+                Participação_Meio_Campo_Charts = pd.read_csv('participação.csv')
                 Participação_Meio_Campo_Charts_1 = Participação_Meio_Campo_Charts[((Participação_Meio_Campo_Charts['Atleta']==jogador_1)&
                                                                                     (Participação_Meio_Campo_Charts['Equipe Janela Análise']==equipe_1)&
                                                                                     (Participação_Meio_Campo_Charts['Posição']==posição_1))|
@@ -9448,7 +9448,7 @@ if choose == "Compare Jogadores":
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
                 st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
-                Ameaça_ofensiva_Meio_Campo_Charts = pd.read_csv('Ameaça_ofensiva.csv')
+                Ameaça_ofensiva_Meio_Campo_Charts = pd.read_csv('ameaça_ofensiva.csv')
                 Ameaça_ofensiva_Meio_Campo_Charts_1 = Ameaça_ofensiva_Meio_Campo_Charts[((Ameaça_ofensiva_Meio_Campo_Charts['Atleta']==jogador_1)&
                                                                                     (Ameaça_ofensiva_Meio_Campo_Charts['Equipe Janela Análise']==equipe_1)&
                                                                                     (Ameaça_ofensiva_Meio_Campo_Charts['Posição']==posição_1))|
@@ -9592,7 +9592,7 @@ if choose == "Compare Jogadores":
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
                 st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
-                Participação_Extremo_Charts = pd.read_csv('Participação.csv')
+                Participação_Extremo_Charts = pd.read_csv('participação.csv')
                 Participação_Extremo_Charts_1 = Participação_Extremo_Charts[((Participação_Extremo_Charts['Atleta']==jogador_1)&
                                                                                     (Participação_Extremo_Charts['Equipe Janela Análise']==equipe_1)&
                                                                                     (Participação_Extremo_Charts['Posição']==posição_1))|
@@ -10096,7 +10096,7 @@ if choose == "Compare Jogadores":
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
                 st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
-                Participação_Atacante_Charts = pd.read_csv('Participação.csv')
+                Participação_Atacante_Charts = pd.read_csv('participação.csv')
                 Participação_Atacante_Charts_1 = Participação_Atacante_Charts[((Participação_Atacante_Charts['Atleta']==jogador_1)&
                                                                                     (Participação_Atacante_Charts['Equipe Janela Análise']==equipe_1)&
                                                                                     (Participação_Atacante_Charts['Posição']==posição_1))|
