@@ -37,7 +37,7 @@ with st.sidebar:
                          )
 
 
-df13 = pd.read_csv("base_jogadores.csv")
+df13 = pd.read_csv("base_jogadores_scouting_assistant_2024.csv")
 df16 = pd.read_csv("Atributos.csv")
 prospectos = df13["Atleta"]
 clubes = df13["Equipe Janela Análise"]
@@ -69,7 +69,7 @@ if choose == "Análise Individual":
             if posição == ("LATERAL"):
             
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                 Lateral_Charts = pd.read_csv('Lateral.csv')
                 Lateral_Charts_1 = Lateral_Charts[(Lateral_Charts['Atleta']==jogadores)&(Lateral_Charts['Liga']==liga)]
                 columns_to_rename = {
@@ -100,7 +100,7 @@ if choose == "Análise Individual":
                     subtitle_color='#344D94',
                     title_name_2=clube,
                     title_color_2 = 'blue',
-                    subtitle_name_2='2023',
+                    subtitle_name_2='2024',
                     subtitle_color_2='#344D94',
                     title_fontsize=20,
                     subtitle_fontsize=18,
@@ -127,7 +127,7 @@ if choose == "Análise Individual":
                 
                 #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição dos Atributos de todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição dos Atributos de todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                 # Dynamically create the HTML string with the 'jogadores' variable
@@ -136,7 +136,7 @@ if choose == "Análise Individual":
                 # Use the dynamically created HTML string in st.markdown
                 st.markdown(title_html, unsafe_allow_html=True)
 
-                #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                 # Collecting data
                 Lateral_Charts_2 = Lateral_Charts[(Lateral_Charts['Liga']==liga)]
 
@@ -329,7 +329,7 @@ if choose == "Análise Individual":
                     if atributo == ("Participação"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Participação_Lateral_Charts = pd.read_csv('participação.csv')
                         Participação_Lateral_Charts_1 = Participação_Lateral_Charts[(Participação_Lateral_Charts['Atleta']==jogadores)&
                                                                                     (Participação_Lateral_Charts['Liga']==liga)&
@@ -362,7 +362,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -386,7 +386,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -395,7 +395,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Participação_Lateral_Charts_2 = Participação_Lateral_Charts[(Participação_Lateral_Charts['Liga']==liga)]
 
@@ -545,7 +545,7 @@ if choose == "Análise Individual":
                     if atributo == ("Defesa"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Defesa_Lateral_Charts = pd.read_csv('defesa.csv')
                         Defesa_Lateral_Charts_1 = Defesa_Lateral_Charts[(Defesa_Lateral_Charts['Atleta']==jogadores)&
                                                                                     (Defesa_Lateral_Charts['Liga']==liga)&
@@ -578,7 +578,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -606,7 +606,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -615,7 +615,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Defesa_Lateral_Charts_2 = Defesa_Lateral_Charts[(Defesa_Lateral_Charts['Liga']==liga)]
 
@@ -821,7 +821,7 @@ if choose == "Análise Individual":
                     if atributo == ("Apoio"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Apoio_Lateral_Charts = pd.read_csv('apoio.csv')
                         Apoio_Lateral_Charts_1 = Apoio_Lateral_Charts[(Apoio_Lateral_Charts['Atleta']==jogadores)&
                                                                                     (Apoio_Lateral_Charts['Liga']==liga)&
@@ -854,7 +854,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -882,7 +882,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -891,7 +891,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Apoio_Lateral_Charts_2 = Apoio_Lateral_Charts[(Apoio_Lateral_Charts['Liga']==liga)]
 
@@ -1098,7 +1098,7 @@ if choose == "Análise Individual":
                     if atributo == ("Ataque"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Ataque_Lateral_Charts = pd.read_csv('ataque.csv')
                         Ataque_Lateral_Charts_1 = Ataque_Lateral_Charts[(Ataque_Lateral_Charts['Atleta']==jogadores)&
                                                                                     (Ataque_Lateral_Charts['Liga']==liga)&
@@ -1131,7 +1131,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -1159,7 +1159,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -1168,7 +1168,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Ataque_Lateral_Charts_2 = Ataque_Lateral_Charts[(Ataque_Lateral_Charts['Liga']==liga)]
 
@@ -1350,7 +1350,7 @@ if choose == "Análise Individual":
                     elif atributo == ("Último passe"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Último_passe_Lateral_Charts = pd.read_csv('último_passe.csv')
                         Último_passe_Lateral_Charts_1 = Último_passe_Lateral_Charts[(Último_passe_Lateral_Charts['Atleta']==jogadores)&
                                                                                     (Último_passe_Lateral_Charts['Liga']==liga)&
@@ -1383,7 +1383,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -1411,7 +1411,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -1420,7 +1420,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Último_passe_Lateral_Charts_2 = Último_passe_Lateral_Charts[(Último_passe_Lateral_Charts['Liga']==liga)]
 
@@ -1584,7 +1584,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -1593,7 +1593,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Drible_Lateral_Charts_2 = Drible_Lateral_Charts[(Drible_Lateral_Charts['Liga']==liga)]
 
@@ -1671,7 +1671,7 @@ if choose == "Análise Individual":
             elif posição == ("ZAGUEIRO"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                 Zagueiro_Charts = pd.read_csv('Zagueiro.csv')
                 Zagueiro_Charts_1 = Zagueiro_Charts[(Zagueiro_Charts['Atleta']==jogadores)&(Zagueiro_Charts['Liga']==liga)]
                 columns_to_rename = {
@@ -1702,7 +1702,7 @@ if choose == "Análise Individual":
                     subtitle_color='#344D94',
                     title_name_2=clube,
                     title_color_2 = 'blue',
-                    subtitle_name_2='2023',
+                    subtitle_name_2='2024',
                     subtitle_color_2='#344D94',
                     title_fontsize=20,
                     subtitle_fontsize=18,
@@ -1726,7 +1726,7 @@ if choose == "Análise Individual":
 
                 #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição dos Atributos de todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição dos Atributos de todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                 # Dynamically create the HTML string with the 'jogadores' variable
@@ -1735,7 +1735,7 @@ if choose == "Análise Individual":
                 # Use the dynamically created HTML string in st.markdown
                 st.markdown(title_html, unsafe_allow_html=True)
 
-                #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                 # Collecting data
                 Zagueiro_Charts_2 = Zagueiro_Charts[(Zagueiro_Charts['Liga']==liga)]
 
@@ -1857,7 +1857,7 @@ if choose == "Análise Individual":
                     if atributo == ("Participação"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Participação_Zagueiro_Charts = pd.read_csv('participação.csv')
                         Participação_Zagueiro_Charts_1 = Participação_Zagueiro_Charts[(Participação_Zagueiro_Charts['Atleta']==jogadores)&
                                                                                     (Participação_Zagueiro_Charts['Liga']==liga)&
@@ -1890,7 +1890,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -1914,7 +1914,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -1923,7 +1923,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Participação_Zagueiro_Charts_2 = Participação_Zagueiro_Charts[(Participação_Zagueiro_Charts['Liga']==liga)]
 
@@ -2073,7 +2073,7 @@ if choose == "Análise Individual":
                     if atributo == ("Defesa"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Defesa_Zagueiro_Charts = pd.read_csv('defesa.csv')
                         Defesa_Zagueiro_Charts_1 = Defesa_Zagueiro_Charts[(Defesa_Zagueiro_Charts['Atleta']==jogadores)&
                                                                                     (Defesa_Zagueiro_Charts['Liga']==liga)&
@@ -2106,7 +2106,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -2134,7 +2134,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -2341,7 +2341,7 @@ if choose == "Análise Individual":
                     if atributo == ("Construção"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Construção_Zagueiro_Charts = pd.read_csv('construção.csv')
                         Construção_Zagueiro_Charts_1 = Construção_Zagueiro_Charts[(Construção_Zagueiro_Charts['Atleta']==jogadores)&
                                                                                     (Construção_Zagueiro_Charts['Liga']==liga)&
@@ -2374,7 +2374,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -2402,7 +2402,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -2411,7 +2411,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Construção_Zagueiro_Charts_2 = Construção_Zagueiro_Charts[(Construção_Zagueiro_Charts['Liga']==liga)]
 
@@ -2566,7 +2566,7 @@ if choose == "Análise Individual":
             elif posição == ("MEIO-CAMPO"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                 Meio_campo_Charts = pd.read_csv('Meio_Campo.csv')
                 Meio_campo_Charts_1 = Meio_campo_Charts[(Meio_campo_Charts['Atleta']==jogadores)&(Meio_campo_Charts['Liga']==liga)]
                 columns_to_rename = {
@@ -2597,7 +2597,7 @@ if choose == "Análise Individual":
                     subtitle_color='#344D94',
                     title_name_2=clube,
                     title_color_2 = 'blue',
-                    subtitle_name_2='2023',
+                    subtitle_name_2='2024',
                     subtitle_color_2='#344D94',
                     title_fontsize=20,
                     subtitle_fontsize=18,
@@ -2624,7 +2624,7 @@ if choose == "Análise Individual":
 
                 #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição dos Atributos de todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição dos Atributos de todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                 # Dynamically create the HTML string with the 'jogadores' variable
@@ -2633,7 +2633,7 @@ if choose == "Análise Individual":
                 # Use the dynamically created HTML string in st.markdown
                 st.markdown(title_html, unsafe_allow_html=True)
 
-                #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                 # Collecting data
                 Meio_campo_Charts_2 = Meio_campo_Charts[(Meio_campo_Charts['Liga']==liga)]
 
@@ -2856,7 +2856,7 @@ if choose == "Análise Individual":
                     if atributo == ("Participação"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Participação_Meio_campo_Charts = pd.read_csv('participação.csv')
                         Participação_Meio_campo_Charts_1 = Participação_Meio_campo_Charts[(Participação_Meio_campo_Charts['Atleta']==jogadores)&
                                                                                     (Participação_Meio_campo_Charts['Liga']==liga)&
@@ -2889,7 +2889,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -2915,7 +2915,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -2924,7 +2924,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Participação_Meio_campo_Charts_2 = Participação_Meio_campo_Charts[(Participação_Meio_campo_Charts['Liga']==liga)]
 
@@ -3078,7 +3078,7 @@ if choose == "Análise Individual":
                     if atributo == ("Defesa"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Defesa_Meio_campo_Charts = pd.read_csv('defesa.csv')
                         Defesa_Meio_campo_Charts_1 = Defesa_Meio_campo_Charts[(Defesa_Meio_campo_Charts['Atleta']==jogadores)&
                                                                                     (Defesa_Meio_campo_Charts['Liga']==liga)&
@@ -3111,7 +3111,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -3139,7 +3139,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -3148,7 +3148,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Defesa_Meio_campo_Charts_2 = Defesa_Meio_campo_Charts[(Defesa_Meio_campo_Charts['Liga']==liga)]
 
@@ -3353,7 +3353,7 @@ if choose == "Análise Individual":
                     if atributo == ("Construção"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Construção_Meio_campo_Charts = pd.read_csv('construção.csv')
                         Construção_Meio_campo_Charts_1 = Construção_Meio_campo_Charts[(Construção_Meio_campo_Charts['Atleta']==jogadores)&
                                                                                     (Construção_Meio_campo_Charts['Liga']==liga)&
@@ -3386,7 +3386,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -3414,7 +3414,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -3423,7 +3423,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Construção_Meio_campo_Charts_2 = Construção_Meio_campo_Charts[(Construção_Meio_campo_Charts['Liga']==liga)]
 
@@ -3578,7 +3578,7 @@ if choose == "Análise Individual":
                     if atributo == ("Ataque"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Ataque_Meio_campo_Charts = pd.read_csv('ataque.csv')
                         Ataque_Meio_campo_Charts_1 = Ataque_Meio_campo_Charts[(Ataque_Meio_campo_Charts['Atleta']==jogadores)&
                                                                                     (Ataque_Meio_campo_Charts['Liga']==liga)&
@@ -3611,7 +3611,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -3639,7 +3639,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -3648,7 +3648,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Ataque_Meio_campo_Charts_2 = Ataque_Meio_campo_Charts[(Ataque_Meio_campo_Charts['Liga']==liga)]
 
@@ -3830,7 +3830,7 @@ if choose == "Análise Individual":
                     if atributo == ("Último passe"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Último_passe_Meio_campo_Charts = pd.read_csv('último_passe.csv')
                         Último_passe_Meio_campo_Charts_1 = Último_passe_Meio_campo_Charts[(Último_passe_Meio_campo_Charts['Atleta']==jogadores)&
                                                                                     (Último_passe_Meio_campo_Charts['Liga']==liga)&
@@ -3863,7 +3863,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -3891,7 +3891,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -3900,7 +3900,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Último_passe_Meio_campo_Charts_2 = Último_passe_Meio_campo_Charts[(Último_passe_Meio_campo_Charts['Liga']==liga)]
 
@@ -4053,7 +4053,7 @@ if choose == "Análise Individual":
                     if atributo == ("Ameaça ofensiva"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Ameaça_ofensiva_Meio_campo_Charts = pd.read_csv('ameaça_ofensiva.csv')
                         Ameaça_ofensiva_Meio_campo_Charts_1 = Ameaça_ofensiva_Meio_campo_Charts[(Ameaça_ofensiva_Meio_campo_Charts['Atleta']==jogadores)&
                                                                                     (Ameaça_ofensiva_Meio_campo_Charts['Liga']==liga)&
@@ -4086,7 +4086,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -4114,7 +4114,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -4123,7 +4123,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Ameaça_ofensiva_Meio_campo_Charts_2 = Ameaça_ofensiva_Meio_campo_Charts[(Ameaça_ofensiva_Meio_campo_Charts['Liga']==liga)]
 
@@ -4259,7 +4259,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -4268,7 +4268,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
 
                         #Collecting data to plot
                         Drible_Meio_campo_Charts_2 = Drible_Meio_campo_Charts[(Drible_Meio_campo_Charts['Liga']==liga)&(Drible_Meio_campo_Charts['Posição']==posição)]
@@ -4343,7 +4343,7 @@ if choose == "Análise Individual":
             elif posição == ("EXTREMO"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                 Extremo_Charts = pd.read_csv('Extremo.csv')
                 Extremo_Charts_1 = Extremo_Charts[(Extremo_Charts['Atleta']==jogadores)&(Extremo_Charts['Liga']==liga)]
                 columns_to_rename = {
@@ -4375,7 +4375,7 @@ if choose == "Análise Individual":
                     subtitle_color='#344D94',
                     title_name_2=clube,
                     title_color_2 = 'blue',
-                    subtitle_name_2='2023',
+                    subtitle_name_2='2024',
                     subtitle_color_2='#344D94',
                     title_fontsize=20,
                     subtitle_fontsize=18,
@@ -4402,7 +4402,7 @@ if choose == "Análise Individual":
 
                 #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição dos Atributos de todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição dos Atributos de todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                 # Dynamically create the HTML string with the 'jogadores' variable
@@ -4411,7 +4411,7 @@ if choose == "Análise Individual":
                 # Use the dynamically created HTML string in st.markdownRetenção_Possefinalização
                 st.markdown(title_html, unsafe_allow_html=True)
 
-                #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                 # Collecting data
                 Extremo_Charts_2 = Extremo_Charts[(Extremo_Charts['Liga']==liga)]
 
@@ -4419,7 +4419,7 @@ if choose == "Análise Individual":
                 metrics = Extremo_Charts_2.iloc[:, np.r_[4:11]].reset_index(drop=True)
                 metrics_participação = metrics.iloc[:, 0].tolist()
                 metrics_recomposição = metrics.iloc[:, 1].tolist()
-                metrics_Retenção_Posse = metrics.iloc[:, 2].tolist()
+                metrics_arranque = metrics.iloc[:, 2].tolist()
                 metrics_ataque = metrics.iloc[:, 3].tolist()
                 metrics_último_passe = metrics.iloc[:, 4].tolist()
                 metrics_finalização = metrics.iloc[:, 5].tolist()
@@ -4431,7 +4431,7 @@ if choose == "Análise Individual":
                 highlight = highlight.iloc[:, np.r_[4:11]].reset_index(drop=True)
                 highlight_participação = highlight.iloc[:, 0].tolist()
                 highlight_recomposição = highlight.iloc[:, 1].tolist()
-                highlight_Retenção_Posse = highlight.iloc[:, 2].tolist()
+                highlight_arranque = highlight.iloc[:, 2].tolist()
                 highlight_ataque = highlight.iloc[:, 3].tolist()
                 highlight_último_passe = highlight.iloc[:, 4].tolist()
                 highlight_finalização = highlight.iloc[:, 5].tolist()
@@ -4441,7 +4441,7 @@ if choose == "Análise Individual":
                 # Computing the selected player specific values
                 highlight_participação_value = pd.DataFrame(highlight_participação).reset_index(drop=True)
                 highlight_recomposição_value = pd.DataFrame(highlight_recomposição).reset_index(drop=True)
-                highlight_Retenção_Posse_value = pd.DataFrame(highlight_Retenção_Posse).reset_index(drop=True)
+                highlight_arranque_value = pd.DataFrame(highlight_arranque).reset_index(drop=True)
                 highlight_ataque_value = pd.DataFrame(highlight_ataque).reset_index(drop=True)
                 highlight_último_passe_value = pd.DataFrame(highlight_último_passe).reset_index(drop=True)
                 highlight_finalização_value = pd.DataFrame(highlight_finalização).reset_index(drop=True)
@@ -4449,7 +4449,7 @@ if choose == "Análise Individual":
 
                 highlight_participação_value = highlight_participação_value.iat[0,0]
                 highlight_recomposição_value = highlight_recomposição_value.iat[0,0]
-                highlight_Retenção_Posse_value = highlight_Retenção_Posse_value.iat[0,0]
+                highlight_arranque_value = highlight_arranque_value.iat[0,0]
                 highlight_ataque_value = highlight_ataque_value.iat[0,0]
                 highlight_último_passe_value = highlight_último_passe_value.iat[0,0]
                 highlight_finalização_value = highlight_finalização_value.iat[0,0]
@@ -4632,7 +4632,7 @@ if choose == "Análise Individual":
                     if atributo == ("Participação"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Participação_Extremo_Charts = pd.read_csv('participação.csv')
                         Participação_Extremo_Charts_1 = Participação_Extremo_Charts[(Participação_Extremo_Charts['Atleta']==jogadores)&
                                                                                     (Participação_Extremo_Charts['Liga']==liga)&
@@ -4665,7 +4665,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -4691,7 +4691,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -4700,7 +4700,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Participação_Extremo_Charts_2 = Participação_Extremo_Charts[(Participação_Extremo_Charts['Liga']==liga)]
 
@@ -4850,7 +4850,7 @@ if choose == "Análise Individual":
                     elif atributo == ("Recomposição"):
                 
                         #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Recomposição_Extremo_Charts = pd.read_csv('recomposição.csv')
                         Recomposição_Extremo_Charts_1 = Recomposição_Extremo_Charts[(Recomposição_Extremo_Charts['Atleta']==jogadores)&
                                                                                     (Recomposição_Extremo_Charts['Liga']==liga)&
@@ -4883,7 +4883,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -4909,7 +4909,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -4918,7 +4918,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Recomposição_Extremo_Charts_2 = Recomposição_Extremo_Charts[(Recomposição_Extremo_Charts['Liga']==liga)]
 
@@ -5069,7 +5069,7 @@ if choose == "Análise Individual":
                     elif atributo == ("Arranque"):
                 
                         #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Arranque_Extremo_Charts = pd.read_csv('arranque.csv')
                         Arranque_Extremo_Charts_1 = Arranque_Extremo_Charts[(Arranque_Extremo_Charts['Atleta']==jogadores)&
                                                                                     (Arranque_Extremo_Charts['Liga']==liga)&
@@ -5102,7 +5102,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -5128,7 +5128,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -5259,7 +5259,7 @@ if choose == "Análise Individual":
                     if atributo == ("Ataque"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Ataque_Extremo_Charts = pd.read_csv('ataque.csv')
                         Ataque_Extremo_Charts_1 = Ataque_Extremo_Charts[(Ataque_Extremo_Charts['Atleta']==jogadores)&
                                                                                     (Ataque_Extremo_Charts['Liga']==liga)&
@@ -5292,7 +5292,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -5320,7 +5320,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -5329,7 +5329,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Ataque_Extremo_Charts_2 = Ataque_Extremo_Charts[(Ataque_Extremo_Charts['Liga']==liga)]
 
@@ -5511,7 +5511,7 @@ if choose == "Análise Individual":
                     if atributo == ("Último passe"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Último_passe_Extremo_Charts = pd.read_csv('último_passe.csv')
                         Último_passe_Extremo_Charts_1 = Último_passe_Extremo_Charts[(Último_passe_Extremo_Charts['Atleta']==jogadores)&
                                                                                     (Último_passe_Extremo_Charts['Liga']==liga)&
@@ -5544,7 +5544,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -5572,7 +5572,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -5581,7 +5581,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Último_passe_Extremo_Charts_2 = Último_passe_Extremo_Charts[(Último_passe_Extremo_Charts['Liga']==liga)]
 
@@ -5734,7 +5734,7 @@ if choose == "Análise Individual":
                     elif atributo == ("Finalização"):
                 
                         #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Finalização_Extremo_Charts = pd.read_csv('finalização.csv')
                         Finalização_Extremo_Charts_1 = Finalização_Extremo_Charts[(Finalização_Extremo_Charts['Atleta']==jogadores)&
                                                                                     (Finalização_Extremo_Charts['Liga']==liga)&
@@ -5767,7 +5767,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -5793,7 +5793,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -5802,7 +5802,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
 
                         #Collecting data to plot
                         Finalização_Extremo_Charts_2 = Finalização_Extremo_Charts[(Finalização_Extremo_Charts['Liga']==liga)&(Finalização_Extremo_Charts['Posição']==posição)]
@@ -5963,7 +5963,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -5972,7 +5972,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
 
                         #Collecting data to plot
                         Drible_Extremo_Charts_2 = Drible_Extremo_Charts[(Drible_Extremo_Charts['Liga']==liga)&(Drible_Extremo_Charts['Posição']==posição)]
@@ -6047,7 +6047,7 @@ if choose == "Análise Individual":
             elif posição == ("ATACANTE"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                 Atacante_Charts = pd.read_csv('Atacante.csv')
                 Atacante_Charts_1 = Atacante_Charts[(Atacante_Charts['Atleta']==jogadores)&(Atacante_Charts['Liga']==liga)]
                 columns_to_rename = {
@@ -6079,7 +6079,7 @@ if choose == "Análise Individual":
                     subtitle_color='#344D94',
                     title_name_2=clube,
                     title_color_2 = 'blue',
-                    subtitle_name_2='2023',
+                    subtitle_name_2='2024',
                     subtitle_color_2='#344D94',
                     title_fontsize=20,
                     subtitle_fontsize=18,
@@ -6106,7 +6106,7 @@ if choose == "Análise Individual":
 
                 #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição dos Atributos de todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição dos Atributos de todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                 # Dynamically create the HTML string with the 'jogadores' variable
@@ -6115,7 +6115,7 @@ if choose == "Análise Individual":
                 # Use the dynamically created HTML string in st.markdownarranquefinalização
                 st.markdown(title_html, unsafe_allow_html=True)
 
-                #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                 # Collecting data
                 Atacante_Charts_2 = Atacante_Charts[(Atacante_Charts['Liga']==liga)]
 
@@ -6387,7 +6387,7 @@ if choose == "Análise Individual":
                     atributo = st.selectbox("Se quiser aprofundar, escolha o Atributo", options=atributos, index = None)
                     if atributo == ("Participação"):
                         #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Participação_Atacante_Charts = pd.read_csv('participação.csv')
                         Participação_Atacante_Charts_1 = Participação_Atacante_Charts[(Participação_Atacante_Charts['Atleta']==jogadores)&
                                                                                     (Participação_Atacante_Charts['Liga']==liga)&
@@ -6420,7 +6420,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -6446,7 +6446,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -6600,7 +6600,7 @@ if choose == "Análise Individual":
                     elif atributo == ("Recomposição"):
                 
                         #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Recomposição_Atacante_Charts = pd.read_csv('recomposição.csv')
                         Recomposição_Atacante_Charts_1 = Recomposição_Atacante_Charts[(Recomposição_Atacante_Charts['Atleta']==jogadores)&
                                                                                     (Recomposição_Atacante_Charts['Liga']==liga)&
@@ -6633,7 +6633,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -6659,7 +6659,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -6668,7 +6668,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Recomposição_Atacante_Charts_2 = Recomposição_Atacante_Charts[(Recomposição_Atacante_Charts['Liga']==liga)]
 
@@ -6820,7 +6820,7 @@ if choose == "Análise Individual":
                     if atributo == ("Retenção de posse"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Retenção_posse_atacante_Charts = pd.read_csv('retenção_posse.csv')
                         Retenção_posse_atacante_Charts_1 = Retenção_posse_atacante_Charts[(Retenção_posse_atacante_Charts['Atleta']==jogadores)&
                                                                                     (Retenção_posse_atacante_Charts['Liga']==liga)&
@@ -6853,7 +6853,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -6881,7 +6881,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -6890,7 +6890,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
 
                         #Collecting data to plot
                         Retenção_posse_atacante_Charts_2 = Retenção_posse_atacante_Charts[(Retenção_posse_atacante_Charts['Liga']==liga)&(Retenção_posse_atacante_Charts['Posição']==posição)]
@@ -7067,7 +7067,7 @@ if choose == "Análise Individual":
                     elif atributo == ("Arranque"):
                 
                         #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Arranque_Atacante_Charts = pd.read_csv('arranque.csv')
                         Arranque_Atacante_Charts_1 = Arranque_Atacante_Charts[(Arranque_Atacante_Charts['Atleta']==jogadores)&
                                                                                     (Arranque_Atacante_Charts['Liga']==liga)&
@@ -7100,7 +7100,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -7126,7 +7126,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -7261,7 +7261,7 @@ if choose == "Análise Individual":
                     elif atributo == ("Bola aérea"):
                 
                         #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Bola_Aérea_Atacante_Charts = pd.read_csv('bola_aérea.csv')
                         Bola_Aérea_Atacante_Charts_1 = Bola_Aérea_Atacante_Charts[(Bola_Aérea_Atacante_Charts['Atleta']==jogadores)&
                                                                                     (Bola_Aérea_Atacante_Charts['Liga']==liga)&
@@ -7294,7 +7294,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -7320,7 +7320,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -7447,7 +7447,7 @@ if choose == "Análise Individual":
                     elif atributo == ("Último passe"):
                 
                     #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Último_passe_Atacante_Charts = pd.read_csv('último_passe.csv')
                         Último_passe_Atacante_Charts_1 = Último_passe_Atacante_Charts[(Último_passe_Atacante_Charts['Atleta']==jogadores)&
                                                                                     (Último_passe_Atacante_Charts['Liga']==liga)&
@@ -7480,7 +7480,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -7508,7 +7508,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -7517,7 +7517,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         # Collecting data
                         #Último_passe_Atacante_Charts_2 = Último_passe_Atacante_Charts[(Último_passe_Atacante_Charts['Liga']==liga)]
 
@@ -7669,7 +7669,7 @@ if choose == "Análise Individual":
                     elif atributo == ("Finalização"):
                 
                         #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Finalização_Atacante_Charts = pd.read_csv('finalização.csv')
                         Finalização_Atacante_Charts_1 = Finalização_Atacante_Charts[(Finalização_Atacante_Charts['Atleta']==jogadores)&
                                                                                     (Finalização_Atacante_Charts['Liga']==liga)&
@@ -7702,7 +7702,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -7728,7 +7728,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -7737,7 +7737,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
 
                         #Collecting data to plot
                         Finalização_Atacante_Charts_2 = Finalização_Atacante_Charts[(Finalização_Atacante_Charts['Liga']==liga)&(Finalização_Atacante_Charts['Posição']==posição)]
@@ -7898,7 +7898,7 @@ if choose == "Análise Individual":
                         
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -7907,7 +7907,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
 
                         #Collecting data to plot
                         Drible_Atacante_Charts_2 = Drible_Atacante_Charts[(Drible_Atacante_Charts['Liga']==liga)&(Drible_Atacante_Charts['Posição']==posição)]
@@ -7979,7 +7979,7 @@ if choose == "Análise Individual":
                     elif atributo == ("Oportunismo"):
                 
                         #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido para o Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
                         Oportunismo_Atacante_Charts = pd.read_csv('oportunismo.csv')
                         Oportunismo_Atacante_Charts_1 = Oportunismo_Atacante_Charts[(Oportunismo_Atacante_Charts['Atleta']==jogadores)&
                                                                                     (Oportunismo_Atacante_Charts['Liga']==liga)&
@@ -8012,7 +8012,7 @@ if choose == "Análise Individual":
                             subtitle_color='#344D94',
                             title_name_2=clube,
                             title_color_2 = 'blue',
-                            subtitle_name_2='2023',
+                            subtitle_name_2='2024',
                             subtitle_color_2='#344D94',
                             title_fontsize=20,
                             subtitle_fontsize=18,
@@ -8038,7 +8038,7 @@ if choose == "Análise Individual":
 
                         #Plotar Segundo Gráfico - Dispersão dos jogadores da mesma posição na liga em eixo único:
 
-                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2023</h3>", unsafe_allow_html=True)
+                        st.markdown("<h3 style='text-align: center; color: blue; '>Distribuição das Métricas Associadas ao Atributo Escolhido para todos os jogadores da Liga em 2024</h3>", unsafe_allow_html=True)
 
 
                         # Dynamically create the HTML string with the 'jogadores' variable
@@ -8047,7 +8047,7 @@ if choose == "Análise Individual":
                         # Use the dynamically created HTML string in st.markdown
                         st.markdown(title_html, unsafe_allow_html=True)
 
-                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2023</h3>", unsafe_allow_html=True)
+                        #st.markdown("<h3 style='text-align: center;'>Percentis dos Atributos do Jogador na Liga em 2024</h3>", unsafe_allow_html=True)
 
                         #Collecting data to plot
                         Oportunismo_Atacante_Charts_2 = Oportunismo_Atacante_Charts[(Oportunismo_Atacante_Charts['Liga']==liga)&(Oportunismo_Atacante_Charts['Posição']==posição)]
@@ -8223,7 +8223,7 @@ if choose == "Compare Jogadores":
         if (posição_1 == posição_2 == ("LATERAL")):
             
             #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-            st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos dos Jogadores em 2023</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos dos Jogadores em 2024</h3>", unsafe_allow_html=True)
             Lateral_Charts = pd.read_csv('Lateral.csv')
 
             Lateral_Charts_1 = Lateral_Charts[(Lateral_Charts['Atleta']==jogador_1)&(Lateral_Charts['Equipe Janela Análise']==equipe_1)|(Lateral_Charts['Atleta']==jogador_2)&(Lateral_Charts['Equipe Janela Análise']==equipe_2)].reset_index()
@@ -8294,7 +8294,7 @@ if choose == "Compare Jogadores":
             if atributo == ("Participação"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Participação_Lateral_Charts = pd.read_csv('participação.csv')
                 Participação_Lateral_Charts_1 = Participação_Lateral_Charts[((Participação_Lateral_Charts['Atleta']==jogador_1)&
                                                                                     (Participação_Lateral_Charts['Equipe Janela Análise']==equipe_1)&
@@ -8366,7 +8366,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Defesa"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Defesa_Lateral_Charts = pd.read_csv('defesa.csv')
                 Defesa_Lateral_Charts_1 = Defesa_Lateral_Charts[((Defesa_Lateral_Charts['Atleta']==jogador_1)&
                                                                                     (Defesa_Lateral_Charts['Equipe Janela Análise']==equipe_1)&
@@ -8438,7 +8438,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Apoio"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Apoio_Lateral_Charts = pd.read_csv('apoio.csv')
                 Apoio_Lateral_Charts_1 = Apoio_Lateral_Charts[((Apoio_Lateral_Charts['Atleta']==jogador_1)&
                                                                                     (Apoio_Lateral_Charts['Equipe Janela Análise']==equipe_1)&
@@ -8446,14 +8446,13 @@ if choose == "Compare Jogadores":
                                                                                     ((Apoio_Lateral_Charts['Atleta']==jogador_2)&
                                                                                     (Apoio_Lateral_Charts['Equipe Janela Análise']==equipe_2)&
                                                                                     (Apoio_Lateral_Charts['Posição']==posição_2))]
-
                 columns_to_rename = {
                     col: col.replace('_percentil', '') for col in Apoio_Lateral_Charts.columns if '_percentil' in col
                 }
                 # Renaming the columns in the DataFrame
                 Apoio_Lateral_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Apoio_Lateral_Charts_1.iloc[:, np.r_[0, 11:17]].reset_index(drop=True)
+                metrics = Apoio_Lateral_Charts_1.iloc[:, np.r_[0, 10:16]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -8510,7 +8509,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Ataque"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Ataque_Lateral_Charts = pd.read_csv('ataque.csv')
                 Ataque_Lateral_Charts_1 = Ataque_Lateral_Charts[((Ataque_Lateral_Charts['Atleta']==jogador_1)&
                                                                                     (Ataque_Lateral_Charts['Equipe Janela Análise']==equipe_1)&
@@ -8582,7 +8581,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Último passe"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Último_passe_Lateral_Charts = pd.read_csv('último_passe.csv')
                 Último_passe_Lateral_Charts_1 = Último_passe_Lateral_Charts[((Último_passe_Lateral_Charts['Atleta']==jogador_1)&
                                                                                     (Último_passe_Lateral_Charts['Equipe Janela Análise']==equipe_1)&
@@ -8597,7 +8596,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Último_passe_Lateral_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Último_passe_Lateral_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Último_passe_Lateral_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -8655,7 +8654,7 @@ if choose == "Compare Jogadores":
         elif (posição_1 == posição_2 == ("ZAGUEIRO")):
             
             #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-            st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos dos Jogadores em 2023</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos dos Jogadores em 2024</h3>", unsafe_allow_html=True)
             Zagueiro_Charts = pd.read_csv('Zagueiro.csv')
 
             Zagueiro_Charts_1 = Zagueiro_Charts[(Zagueiro_Charts['Atleta']==jogador_1)&(Zagueiro_Charts['Equipe Janela Análise']==equipe_1)|(Zagueiro_Charts['Atleta']==jogador_2)&(Zagueiro_Charts['Equipe Janela Análise']==equipe_2)].reset_index()
@@ -8726,7 +8725,7 @@ if choose == "Compare Jogadores":
             if atributo == ("Participação"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Participação_Zagueiro_Charts = pd.read_csv('participação.csv')
                 Participação_Zagueiro_Charts_1 = Participação_Zagueiro_Charts[((Participação_Zagueiro_Charts['Atleta']==jogador_1)&
                                                                                     (Participação_Zagueiro_Charts['Equipe Janela Análise']==equipe_1)&
@@ -8798,7 +8797,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Defesa"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Defesa_Zagueiro_Charts = pd.read_csv('defesa.csv')
                 Defesa_Zagueiro_Charts_1 = Defesa_Zagueiro_Charts[((Defesa_Zagueiro_Charts['Atleta']==jogador_1)&
                                                                                     (Defesa_Zagueiro_Charts['Equipe Janela Análise']==equipe_1)&
@@ -8870,7 +8869,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Construção"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Construção_Zagueiro_Charts = pd.read_csv('construção.csv')
                 Construção_Zagueiro_Charts_1 = Construção_Zagueiro_Charts[((Construção_Zagueiro_Charts['Atleta']==jogador_1)&
                                                                                     (Construção_Zagueiro_Charts['Equipe Janela Análise']==equipe_1)&
@@ -8885,7 +8884,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Construção_Zagueiro_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Construção_Zagueiro_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Construção_Zagueiro_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -8943,7 +8942,7 @@ if choose == "Compare Jogadores":
         elif (posição_1 == posição_2 == ("MEIO-CAMPO")):
             
             #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-            st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos dos Jogadores em 2023</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos dos Jogadores em 2024</h3>", unsafe_allow_html=True)
             Meio_Campo_Charts = pd.read_csv('Meio_Campo.csv')
 
             Meio_Campo_Charts_1 = Meio_Campo_Charts[(Meio_Campo_Charts['Atleta']==jogador_1)&(Meio_Campo_Charts['Equipe Janela Análise']==equipe_1)|(Meio_Campo_Charts['Atleta']==jogador_2)&(Meio_Campo_Charts['Equipe Janela Análise']==equipe_2)].reset_index()
@@ -9014,7 +9013,7 @@ if choose == "Compare Jogadores":
             if atributo == ("Participação"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Participação_Meio_Campo_Charts = pd.read_csv('participação.csv')
                 Participação_Meio_Campo_Charts_1 = Participação_Meio_Campo_Charts[((Participação_Meio_Campo_Charts['Atleta']==jogador_1)&
                                                                                     (Participação_Meio_Campo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9086,7 +9085,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Defesa"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Defesa_Meio_Campo_Charts = pd.read_csv('defesa.csv')
                 Defesa_Meio_Campo_Charts_1 = Defesa_Meio_Campo_Charts[((Defesa_Meio_Campo_Charts['Atleta']==jogador_1)&
                                                                                     (Defesa_Meio_Campo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9094,7 +9093,6 @@ if choose == "Compare Jogadores":
                                                                                     ((Defesa_Meio_Campo_Charts['Atleta']==jogador_2)&
                                                                                     (Defesa_Meio_Campo_Charts['Equipe Janela Análise']==equipe_2)&
                                                                                     (Defesa_Meio_Campo_Charts['Posição']==posição_2))]
-
                 columns_to_rename = {
                     col: col.replace('_percentil', '') for col in Defesa_Meio_Campo_Charts.columns if '_percentil' in col
                 }
@@ -9158,7 +9156,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Construção"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Construção_Meio_Campo_Charts = pd.read_csv('construção.csv')
                 Construção_Meio_Campo_Charts_1 = Construção_Meio_Campo_Charts[((Construção_Meio_Campo_Charts['Atleta']==jogador_1)&
                                                                                     (Construção_Meio_Campo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9173,7 +9171,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Construção_Meio_Campo_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Construção_Meio_Campo_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Construção_Meio_Campo_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -9231,7 +9229,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Apoio"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Apoio_Meio_Campo_Charts = pd.read_csv('apoio.csv')
                 Apoio_Meio_Campo_Charts_1 = Apoio_Meio_Campo_Charts[((Apoio_Meio_Campo_Charts['Atleta']==jogador_1)&
                                                                                     (Apoio_Meio_Campo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9303,7 +9301,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Ataque"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Ataque_Meio_Campo_Charts = pd.read_csv('ataque.csv')
                 Ataque_Meio_Campo_Charts_1 = Ataque_Meio_Campo_Charts[((Ataque_Meio_Campo_Charts['Atleta']==jogador_1)&
                                                                                     (Ataque_Meio_Campo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9375,7 +9373,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Último passe"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Último_passe_Meio_Campo_Charts = pd.read_csv('último_passe.csv')
                 Último_passe_Meio_Campo_Charts_1 = Último_passe_Meio_Campo_Charts[((Último_passe_Meio_Campo_Charts['Atleta']==jogador_1)&
                                                                                     (Último_passe_Meio_Campo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9390,7 +9388,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Último_passe_Meio_Campo_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Último_passe_Meio_Campo_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Último_passe_Meio_Campo_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -9447,7 +9445,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Ameaça ofensiva"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Ameaça_ofensiva_Meio_Campo_Charts = pd.read_csv('ameaça_ofensiva.csv')
                 Ameaça_ofensiva_Meio_Campo_Charts_1 = Ameaça_ofensiva_Meio_Campo_Charts[((Ameaça_ofensiva_Meio_Campo_Charts['Atleta']==jogador_1)&
                                                                                     (Ameaça_ofensiva_Meio_Campo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9462,7 +9460,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Ameaça_ofensiva_Meio_Campo_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Ameaça_ofensiva_Meio_Campo_Charts_1.iloc[:, np.r_[0, 8:11]].reset_index(drop=True)
+                metrics = Ameaça_ofensiva_Meio_Campo_Charts_1.iloc[:, np.r_[0, 7:10]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -9520,7 +9518,7 @@ if choose == "Compare Jogadores":
         elif (posição_1 == posição_2 == ("EXTREMO")):
             
             #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-            st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos dos Jogadores em 2023</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos dos Jogadores em 2024</h3>", unsafe_allow_html=True)
             Extremo_Charts = pd.read_csv('Extremo.csv')
 
             Extremo_Charts_1 = Extremo_Charts[(Extremo_Charts['Atleta']==jogador_1)&(Extremo_Charts['Equipe Janela Análise']==equipe_1)|(Extremo_Charts['Atleta']==jogador_2)&(Extremo_Charts['Equipe Janela Análise']==equipe_2)].reset_index()
@@ -9591,7 +9589,7 @@ if choose == "Compare Jogadores":
             if atributo == ("Participação"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Participação_Extremo_Charts = pd.read_csv('participação.csv')
                 Participação_Extremo_Charts_1 = Participação_Extremo_Charts[((Participação_Extremo_Charts['Atleta']==jogador_1)&
                                                                                     (Participação_Extremo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9663,7 +9661,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Recomposição"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Recomposição_Extremo_Charts = pd.read_csv('recomposição.csv')
                 Recomposição_Extremo_Charts_1 = Recomposição_Extremo_Charts[((Recomposição_Extremo_Charts['Atleta']==jogador_1)&
                                                                                     (Recomposição_Extremo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9678,7 +9676,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Recomposição_Extremo_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Recomposição_Extremo_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Recomposição_Extremo_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -9735,7 +9733,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Arranque"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Arranque_Extremo_Charts = pd.read_csv('arranque.csv')
                 Arranque_Extremo_Charts_1 = Arranque_Extremo_Charts[((Arranque_Extremo_Charts['Atleta']==jogador_1)&
                                                                                     (Arranque_Extremo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9750,7 +9748,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Arranque_Extremo_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Arranque_Extremo_Charts_1.iloc[:, np.r_[0, 8:11]].reset_index(drop=True)
+                metrics = Arranque_Extremo_Charts_1.iloc[:, np.r_[0, 7:10]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -9807,7 +9805,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Ataque"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Ataque_Extremo_Charts = pd.read_csv('ataque.csv')
                 Ataque_Extremo_Charts_1 = Ataque_Extremo_Charts[((Ataque_Extremo_Charts['Atleta']==jogador_1)&
                                                                                     (Ataque_Extremo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9879,7 +9877,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Último passe"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Último_passe_Extremo_Charts = pd.read_csv('último_passe.csv')
                 Último_passe_Extremo_Charts_1 = Último_passe_Extremo_Charts[((Último_passe_Extremo_Charts['Atleta']==jogador_1)&
                                                                                     (Último_passe_Extremo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9894,7 +9892,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Último_passe_Extremo_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Último_passe_Extremo_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Último_passe_Extremo_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -9951,7 +9949,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Finalização"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Finalização_Extremo_Charts = pd.read_csv('finalização.csv')
                 Finalização_Extremo_Charts_1 = Finalização_Extremo_Charts[((Finalização_Extremo_Charts['Atleta']==jogador_1)&
                                                                                     (Finalização_Extremo_Charts['Equipe Janela Análise']==equipe_1)&
@@ -9966,7 +9964,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Finalização_Extremo_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Finalização_Extremo_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Finalização_Extremo_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -10024,7 +10022,7 @@ if choose == "Compare Jogadores":
         elif (posição_1 == posição_2 == ("ATACANTE")):
             
             #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-            st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos dos Jogadores em 2023</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center; color: blue; '>Percentis dos Atributos dos Jogadores em 2024</h3>", unsafe_allow_html=True)
             Atacante_Charts = pd.read_csv('Atacante.csv')
 
             Atacante_Charts_1 = Atacante_Charts[(Atacante_Charts['Atleta']==jogador_1)&(Atacante_Charts['Equipe Janela Análise']==equipe_1)|(Atacante_Charts['Atleta']==jogador_2)&(Atacante_Charts['Equipe Janela Análise']==equipe_2)].reset_index()
@@ -10095,7 +10093,7 @@ if choose == "Compare Jogadores":
             if atributo == ("Participação"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Participação_Atacante_Charts = pd.read_csv('participação.csv')
                 Participação_Atacante_Charts_1 = Participação_Atacante_Charts[((Participação_Atacante_Charts['Atleta']==jogador_1)&
                                                                                     (Participação_Atacante_Charts['Equipe Janela Análise']==equipe_1)&
@@ -10167,7 +10165,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Recomposição"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Recomposição_Atacante_Charts = pd.read_csv('recomposição.csv')
                 Recomposição_Atacante_Charts_1 = Recomposição_Atacante_Charts[((Recomposição_Atacante_Charts['Atleta']==jogador_1)&
                                                                                     (Recomposição_Atacante_Charts['Equipe Janela Análise']==equipe_1)&
@@ -10175,14 +10173,13 @@ if choose == "Compare Jogadores":
                                                                                     ((Recomposição_Atacante_Charts['Atleta']==jogador_2)&
                                                                                     (Recomposição_Atacante_Charts['Equipe Janela Análise']==equipe_2)&
                                                                                     (Recomposição_Atacante_Charts['Posição']==posição_2))]
-
                 columns_to_rename = {
                     col: col.replace('_percentil', '') for col in Recomposição_Atacante_Charts.columns if '_percentil' in col
                 }
                 # Renaming the columns in the DataFrame
                 Recomposição_Atacante_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Recomposição_Atacante_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Recomposição_Atacante_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -10239,7 +10236,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Retenção de posse"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Retenção_Posse_Atacante_Charts = pd.read_csv('retenção_posse.csv')
                 Retenção_Posse_Atacante_Charts_1 = Retenção_Posse_Atacante_Charts[((Retenção_Posse_Atacante_Charts['Atleta']==jogador_1)&
                                                                                     (Retenção_Posse_Atacante_Charts['Equipe Janela Análise']==equipe_1)&
@@ -10247,14 +10244,13 @@ if choose == "Compare Jogadores":
                                                                                     ((Retenção_Posse_Atacante_Charts['Atleta']==jogador_2)&
                                                                                     (Retenção_Posse_Atacante_Charts['Equipe Janela Análise']==equipe_2)&
                                                                                     (Retenção_Posse_Atacante_Charts['Posição']==posição_2))]
-
                 columns_to_rename = {
                     col: col.replace('_percentil', '') for col in Retenção_Posse_Atacante_Charts.columns if '_percentil' in col
                 }
                 # Renaming the columns in the DataFrame
                 Retenção_Posse_Atacante_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Retenção_Posse_Atacante_Charts_1.iloc[:, np.r_[0, 10:15]].reset_index(drop=True)
+                metrics = Retenção_Posse_Atacante_Charts_1.iloc[:, np.r_[0, 9:14]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -10311,7 +10307,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Arranque"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Arranque_Atacante_Charts = pd.read_csv('arranque.csv')
                 Arranque_Atacante_Charts_1 = Arranque_Atacante_Charts[((Arranque_Atacante_Charts['Atleta']==jogador_1)&
                                                                                     (Arranque_Atacante_Charts['Equipe Janela Análise']==equipe_1)&
@@ -10319,14 +10315,13 @@ if choose == "Compare Jogadores":
                                                                                     ((Arranque_Atacante_Charts['Atleta']==jogador_2)&
                                                                                     (Arranque_Atacante_Charts['Equipe Janela Análise']==equipe_2)&
                                                                                     (Arranque_Atacante_Charts['Posição']==posição_2))]
-
                 columns_to_rename = {
                     col: col.replace('_percentil', '') for col in Arranque_Atacante_Charts.columns if '_percentil' in col
                 }
                 # Renaming the columns in the DataFrame
                 Arranque_Atacante_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Arranque_Atacante_Charts_1.iloc[:, np.r_[0, 8:11]].reset_index(drop=True)
+                metrics = Arranque_Atacante_Charts_1.iloc[:, np.r_[0, 7:10]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -10383,7 +10378,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Bola aérea"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Bola_Aérea_Atacante_Charts = pd.read_csv('bola_aérea.csv')
                 Bola_Aérea_Atacante_Charts_1 = Bola_Aérea_Atacante_Charts[((Bola_Aérea_Atacante_Charts['Atleta']==jogador_1)&
                                                                                     (Bola_Aérea_Atacante_Charts['Equipe Janela Análise']==equipe_1)&
@@ -10391,14 +10386,13 @@ if choose == "Compare Jogadores":
                                                                                     ((Bola_Aérea_Atacante_Charts['Atleta']==jogador_2)&
                                                                                     (Bola_Aérea_Atacante_Charts['Equipe Janela Análise']==equipe_2)&
                                                                                     (Bola_Aérea_Atacante_Charts['Posição']==posição_2))]
-
                 columns_to_rename = {
                     col: col.replace('_percentil', '') for col in Bola_Aérea_Atacante_Charts.columns if '_percentil' in col
                 }
                 # Renaming the columns in the DataFrame
                 Bola_Aérea_Atacante_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Bola_Aérea_Atacante_Charts_1.iloc[:, np.r_[0, 8:11]].reset_index(drop=True)
+                metrics = Bola_Aérea_Atacante_Charts_1.iloc[:, np.r_[0, 7:10]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -10455,7 +10449,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Último passe"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Último_passe_Atacante_Charts = pd.read_csv('último_passe.csv')
                 Último_passe_Atacante_Charts_1 = Último_passe_Atacante_Charts[((Último_passe_Atacante_Charts['Atleta']==jogador_1)&
                                                                                     (Último_passe_Atacante_Charts['Equipe Janela Análise']==equipe_1)&
@@ -10470,7 +10464,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Último_passe_Atacante_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Último_passe_Atacante_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Último_passe_Atacante_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -10527,7 +10521,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Finalização"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Finalização_Atacante_Charts = pd.read_csv('finalização.csv')
                 Finalização_Atacante_Charts_1 = Finalização_Atacante_Charts[((Finalização_Atacante_Charts['Atleta']==jogador_1)&
                                                                                     (Finalização_Atacante_Charts['Equipe Janela Análise']==equipe_1)&
@@ -10535,14 +10529,13 @@ if choose == "Compare Jogadores":
                                                                                     ((Finalização_Atacante_Charts['Atleta']==jogador_2)&
                                                                                     (Finalização_Atacante_Charts['Equipe Janela Análise']==equipe_2)&
                                                                                     (Finalização_Atacante_Charts['Posição']==posição_2))]
-
                 columns_to_rename = {
                     col: col.replace('_percentil', '') for col in Finalização_Atacante_Charts.columns if '_percentil' in col
                 }
                 # Renaming the columns in the DataFrame
                 Finalização_Atacante_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Finalização_Atacante_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Finalização_Atacante_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
@@ -10599,7 +10592,7 @@ if choose == "Compare Jogadores":
             elif atributo == ("Oportunismo"):
                 
                 #Plotar Primeiro Gráfico - Radar de Percentis do Jogador na liga:
-                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2023</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: blue; '>Percentis das Métricas Associadas ao Atributo Escolhido em 2024</h3>", unsafe_allow_html=True)
                 Oportunismo_Atacante_Charts = pd.read_csv('oportunismo.csv')
                 Oportunismo_Atacante_Charts_1 = Oportunismo_Atacante_Charts[((Oportunismo_Atacante_Charts['Atleta']==jogador_1)&
                                                                                     (Oportunismo_Atacante_Charts['Equipe Janela Análise']==equipe_1)&
@@ -10614,7 +10607,7 @@ if choose == "Compare Jogadores":
                 # Renaming the columns in the DataFrame
                 Oportunismo_Atacante_Charts_1.rename(columns=columns_to_rename, inplace=True)
                 #Collecting data to plot
-                metrics = Oportunismo_Atacante_Charts_1.iloc[:, np.r_[0, 9:13]].reset_index(drop=True)
+                metrics = Oportunismo_Atacante_Charts_1.iloc[:, np.r_[0, 8:12]].reset_index(drop=True)
                 ## parameter names
                 params = list(metrics.columns[1:])
 
